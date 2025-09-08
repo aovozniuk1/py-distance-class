@@ -2,13 +2,13 @@ from typing import Any
 
 
 class Distance:
-    def __init__(self, km):
+    def __init__(self, km: int) -> None:
         self.km = km
 
-    def __str__(self):
+    def __str__(self) -> str:
         return f"Distance: {self.km} kilometers."
 
-    def __repr__(self):
+    def __repr__(self) -> str:
         return f"Distance(km={self.km})"
 
     def __add__(self, other: Any) -> "Distance":
